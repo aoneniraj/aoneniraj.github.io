@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Niraj Thapaliya</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Niraj Thapaliya</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about">
+      <h1>About me</h1>
+      <p>I’m an ICT professional based in Sydney with more than three years’ experience delivering reliable IT services and infrastructure improvements. I enjoy working across networking, security, virtualization and cloud platforms to reduce costs, improve backup efficiencies and increase system uptime.</p>
+
+      <h2>Leadership & teamwork</h2>
+      <p>As team leader for my final year project at Victoria University, I coordinated development using Agile practices and maintained code repositories and CI/CD pipelines. The project implemented a secure VPN solution for remote workers and delivered a client-side deployment case study.</p>
+
+      <h2>Education</h2>
+      <p><strong>Masters in Applied Information Technology</strong> — Victoria University, Sydney CBD</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Niraj Thapaliya</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
