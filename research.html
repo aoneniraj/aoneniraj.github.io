@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Research — Niraj Thapaliya</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Niraj Thapaliya</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Research</h1>
+      <p>I explore applied Machine Learning for cybersecurity — focusing on threat detection and model robustness. Below are ideas and notes for future work and writing.</p>
+
+      <h2>Areas of interest</h2>
+      <ul>
+        <li>ML-based network intrusion detection and anomaly detection</li>
+        <li>Adversarial attacks on ML models and defensive strategies</li>
+        <li>Scalable algorithms for real-time threat detection</li>
+      </ul>
+
+      <h2>Planned experiments</h2>
+      <ol>
+        <li>Benchmark classical ML vs. deep learning on UNSW-NB15 & CSE-CIC IDS datasets</li>
+        <li>Test model robustness under adversarial perturbations</li>
+        <li>Design lightweight, interpretable models for deployment on resource-constrained devices</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 Niraj Thapaliya</p></div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
