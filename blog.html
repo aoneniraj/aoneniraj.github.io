@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Niraj Thapaliya</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Niraj Thapaliya</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Blog</h1>
+    <p class="muted">Notes, tutorials and writing about ML & cybersecurity.</p>
+
+    <article class="post">
+      <h2>Understanding VPNs for Remote Workers</h2>
+      <p class="muted">April 2025 • Project notes</p>
+      <p>Overview of secure remote connectivity using OpenVPN and deployment tips for small teams.</p>
+      <a class="link" href="#">Read full post →</a>
+    </article>
+
+    <article class="post">
+      <h2>Practical guide: Basic network hardening</h2>
+      <p class="muted">March 2025</p>
+      <p>Quick steps for reducing attack surface in small office networks.</p>
+      <a class="link" href="#">Read full post →</a>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 Niraj Thapaliya</p></div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
