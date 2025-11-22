@@ -1,32 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Niraj Thapaliya - Personal Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Niraj Thapaliya — ICT • Networking & Security</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <header>
-    <h1>Niraj Thapaliya</h1>
-    <p>Machine Learning | Cybersecurity | Researcher</p>
-    <nav>
-      <a href="about.html">About</a>
-      <a href="cv.html">CV</a>
-      <a href="research.html">Research</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Niraj Thapaliya</div>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
   </header>
 
-  <section class="hero">
-    <img src="assets/images/profile.jpg" alt="Your Photo">
-    <h2>Welcome to My Personal Website</h2>
-    <p>I explore Machine Learning applications in Cybersecurity.  
-       This site shares my journey, research work, and writing.</p>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Hi, I’m <span class="accent">Niraj</span>.</h1>
+          <p class="lead">ICT Professional — Network & Security • Cloud & Systems • Problem solver</p>
 
+          <p>I specialise in designing and maintaining secure, scalable IT infrastructures for both private and government organisations. My work focuses on reducing downtime, improving backup efficiency, and delivering reliable solutions using multi-vendor networking, virtualization and cloud technologies.</p>
+
+          <div class="cta-row">
+            <a class="btn" href="cv.html">View CV</a>
+            <a class="btn ghost" href="research.html">See Research</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <img src="assets/profile-placeholder.png" alt="Profile picture" class="profile" />
+          <div class="card-body">
+            <h3>Quick facts</h3>
+            <ul>
+              <li><strong>Location:</strong> Arncliffe, NSW, Australia</li>
+              <li><strong>Phone:</strong> +61 450 639 249</li>
+              <li><strong>Email:</strong> <a href="mailto:nirajthapaliya95@gmail.com">nirajthapaliya95@gmail.com</a></li>
+              <li><strong>Experience:</strong> 3+ years</li>
+            </ul>
+            <a class="btn small" href="contact.html">Get in touch</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature">
+        <h4>Networks & Security</h4>
+        <p>Cisco ASA/FirePower, Fortinet, Sophos, IPS, VPNs — design to protect and monitor.</p>
+      </article>
+
+      <article class="feature">
+        <h4>Cloud & Virtualisation</h4>
+        <p>VMware (vSphere), Citrix XenCenter, Microsoft 365 — cost reduction and backup improvements.</p>
+      </article>
+
+      <article class="feature">
+        <h4>Systems & Telephony</h4>
+        <p>Datacenter ops (Tier 2 SLA), IP telephony (Cisco & Avaya), large-scale system maintenance.</p>
+      </article>
+    </section>
+
+    <section class="cards container">
+      <div class="card">
+        <h3>Latest research</h3>
+        <p>Machine learning for threat detection and adversarial robustness in cybersecurity.</p>
+        <a href="research.html" class="link">Read more →</a>
+      </div>
+
+      <div class="card">
+        <h3>Blog</h3>
+        <p>Guides, lab notes and practical tutorials about networking, virtualization and security.</p>
+        <a href="blog.html" class="link">Read posts →</a>
+      </div>
+
+      <div class="card">
+        <h3>Projects</h3>
+        <p>VPN system for remote workers — final year project using OpenVPN and CI/CD for deployment.</p>
+        <a href="cv.html#projects" class="link">Project details →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Niraj Thapaliya — Built with GitHub Pages</p>
+      <p class="muted">References and portfolio available on request.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small mobile menu toggle
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
 </body>
 </html>
-
-
