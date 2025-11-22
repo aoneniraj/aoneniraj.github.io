@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Niraj Thapaliya</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Niraj Thapaliya</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container contact">
+    <h1>Contact</h1>
+    <p>If you'd like to collaborate or request my CV/portfolio, reach out:</p>
+    <ul class="simple-list">
+      <li><strong>Address:</strong> 4 Station Street, Arncliffe, NSW 2205</li>
+      <li><strong>Phone:</strong> +61 450 639 249</li>
+      <li><strong>Email:</strong> <a href="mailto:nirajthapaliya95@gmail.com">nirajthapaliya95@gmail.com</a></li>
+    </ul>
+
+    <p>Or use the email link above — I'll usually reply within 48 hours.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 Niraj Thapaliya</p></div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
