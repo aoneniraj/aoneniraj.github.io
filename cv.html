@@ -1,117 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niraj Thapaliya - CV</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <style>
-        /* Quick inline styles for CV layout */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        .cv-container {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: #fff;
-            padding: 40px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            border-radius: 10px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        h1 { margin-bottom: 5px; }
-        h2 { border-bottom: 2px solid #2980b9; padding-bottom: 5px; margin-top: 30px; }
-        .section { margin-bottom: 25px; }
-        .contact p { margin: 5px 0; }
-        ul { padding-left: 20px; margin: 5px 0; }
-        li { margin-bottom: 5px; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Niraj Thapaliya</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cv-container">
-        <!-- Header -->
-        <header class="header">
-            <h1>Niraj Thapaliya</h1>
-            <div class="contact">
-                <p>4 Station Street, Arncliffe, 2205 NSW</p>
-                <p>+61 450639249 | nirajthapaliya95@gmail.com</p>
-            </div>
-        </header>
-
-        <!-- Objective -->
-        <div class="section">
-            <h2>Objective</h2>
-            <p>As an ICT professional with over 3 years of experience enhancing IT infrastructure from small to large organizations. Providing exceptional service through quick response and effective execution for customer satisfaction through minimum downtime and maintaining system reliability.</p>
-        </div>
-
-        <!-- Education -->
-        <div class="section">
-            <h2>Education</h2>
-            <p><strong>Victoria University, Sydney CBD</strong></p>
-            <p>Masters in Applied Information Technology</p>
-        </div>
-
-        <!-- Key Skills -->
-        <div class="section">
-            <h2>Key Skills</h2>
-            <ul>
-                <li>Networking and Security (Cisco ASA/Firepower, Fortinet, Sophos, VPN, IPS)</li>
-                <li>Routing and Switching (Cisco, Aruba, Juniper, HPe, Mikrotik)</li>
-                <li>Server and Systems</li>
-                <li>Cloud and Virtualization (Microsoft 365, Gsuite, Zoho, Microsoft SharePoint)</li>
-                <li>Monitoring and Troubleshooting</li>
-                <li>Scripting (Bash/Shell)</li>
-                <li>IP Telephony</li>
-            </ul>
-        </div>
-
-        <!-- Experience -->
-        <div class="section">
-            <h2>Experience</h2>
-            <p><strong>March 2025 - Present | Club Attendee • St George Leagues Club</strong></p>
-            <ul>
-                <li>Overseeing daily operations following Club’s policy</li>
-                <li>Ensuring compliance with RSA/RCG regulations</li>
-                <li>Providing exceptional customer service</li>
-                <li>Maintaining and troubleshooting gaming errors</li>
-            </ul>
-
-            <p><strong>Oct 2018 - Mar 2022 | ICT Officer • Sastra Network Solution</strong></p>
-            <ul>
-                <li>Ensured smooth IT operations for private and government organizations</li>
-                <li>Updated legacy systems implementing L2 and L3 network components effectively to reduce latency</li>
-                <li>Provided wireless solutions both standalone and controller-based</li>
-                <li>Implemented cloud and virtualization technology using VMware, Vsphere and Citrix Zencenter, reducing costs by up to 40% and improving backup efficiency</li>
-                <li>Maintained datacenter operations following Tier 2 SLAs using ticketing systems to manage client requests and troubleshooting</li>
-                <li>Managed SIP systems internally between sister organizations (Cisco, Avaya)</li>
-                <li>Worked with multivendor systems: Cisco, Juniper, Palo Alto, HP, Cambium, Ubiquiti, Fortigate</li>
-            </ul>
-        </div>
-
-        <!-- Leadership -->
-        <div class="section">
-            <h2>Leadership</h2>
-            <p>Team Leader for final year project at Victoria University</p>
-            <p><strong>Topic:</strong> VPN System for Remote Workers</p>
-            <ul>
-                <li>Divided tasks among team members</li>
-                <li>Used agile methodology for system development</li>
-                <li>Maintained IDEs, code repositories and CI/CD pipelines</li>
-                <li>Implemented OpenVPN for remote and secure connections and provided a client-side case study</li>
-            </ul>
-        </div>
-
-        <!-- References -->
-        <div class="section">
-            <h2>References</h2>
-            <p>Available upon request.</p>
-        </div>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">Niraj Thapaliya</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="research.html">Research</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
     </div>
+  </header>
+
+  <main class="container cv">
+    <section>
+      <h1>Curriculum Vitae</h1>
+      <p class="muted">ICT Professional • Network & Security Specialist</p>
+
+      <h2 id="contact">Contact</h2>
+      <ul class="simple-list">
+        <li>4 Station Street, Arncliffe, NSW 2205</li>
+        <li>Phone: +61 450 639 249</li>
+        <li>Email: <a href="mailto:nirajthapaliya95@gmail.com">nirajthapaliya95@gmail.com</a></li>
+      </ul>
+
+      <h2>Objective</h2>
+      <p>As an ICT professional with over 3 years of experience, I deliver reliable IT services and infrastructure improvements for organisations of varying sizes. I focus on fast response, minimal downtime, and system reliability.</p>
+
+      <h2>Education</h2>
+      <ul class="simple-list">
+        <li>Masters in Applied Information Technology — Victoria University, Sydney CBD</li>
+      </ul>
+
+      <h2>Key skills</h2>
+      <div class="skills-grid">
+        <div><strong>Networking & Security</strong><br/>Cisco ASA/Firepower, Fortinet, Sophos, IPS, VPN</div>
+        <div><strong>Routing & Switching</strong><br/>Cisco, Aruba, Juniper, HPe, Mikrotik</div>
+        <div><strong>Cloud & Virtualization</strong><br/>Microsoft 365, GSuite, Zoho, VMware vSphere, Citrix</div>
+        <div><strong>Scripting</strong><br/>Bash / shell</div>
+        <div><strong>IP Telephony</strong><br/>Cisco, Avaya, SIP systems</div>
+        <div><strong>Monitoring & Troubleshooting</strong><br/>Datacenter ops, ticketing systems, Tier 2 SLA</div>
+      </div>
+
+      <h2>Experience</h2>
+
+      <div class="job">
+        <h3>Club Attendee — St George Leagues Club</h3>
+        <p class="muted">March 2025 — Present</p>
+        <ul>
+          <li>Overseeing daily operations following club policy</li>
+          <li>Ensuring compliance with RSA / RCG regulations</li>
+          <li>Providing customer service and troubleshooting gaming systems</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>ICT Officer — Sastra Network Solution</h3>
+        <p class="muted">Oct 2018 — Mar 2022</p>
+        <ul>
+          <li>Ensured smooth IT operations for private and government organisations</li>
+          <li>Updated legacy systems using L2/L3 network components to reduce latency</li>
+          <li>Deployed wireless solutions (standalone & controller-based)</li>
+          <li>Implemented VMware / vSphere / Citrix, achieving up to 40% cost reduction & better backups</li>
+          <li>Maintained datacenter operations following Tier 2 SLAs using ticketing systems</li>
+          <li>Managed SIP systems for multi-site communications (Cisco, Avaya)</li>
+          <li>Worked across multi-vendor environments: Cisco, Juniper, Palo Alto, HP, Cambium, Ubiquiti, FortiGate</li>
+        </ul>
+      </div>
+
+      <h2 id="projects">Projects & Leadership</h2>
+      <p><strong>Team Leader — Final year project (Victoria University)</strong><br/>Topic: VPN System for Remote Workers</p>
+      <ul>
+        <li>Led team using Agile methodology, split tasks and maintained repositories</li>
+        <li>Implemented OpenVPN for client-side secure remote connectivity</li>
+        <li>Managed CI/CD pipelines and development environment</li>
+      </ul>
+
+      <h2>References</h2>
+      <p>Available upon request.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 Niraj Thapaliya</p></div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
 </body>
 </html>
